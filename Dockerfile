@@ -2,7 +2,7 @@ FROM linuxpete/rpi-openzwave
 
 VOLUME /config
 
-ADD https://raw.githubusercontent.com/home-assistant/home-assistant/dev/requirements_all.txt /tmp/requirements_all.txt
+ADD https://raw.githubusercontent.com/home-assistant/home-assistant/master/requirements_all.txt /tmp/requirements_all.txt
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends python3-cffi python3-cryptography python3-netifaces python3-yaml python3-colorlog && \
